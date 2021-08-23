@@ -1,0 +1,183 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+ul.usercards{
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  grid-auto-rows: auto;
+   
+  grid-gap: 1rem;
+
+  list-style-type: none;
+} 
+
+
+
+.usercard{
+  
+ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(248, 246, 246, 0.19);
+border-radius: 20px;
+
+padding: 1px;
+}
+
+.userimage{
+  width: 100px; 
+  border-radius: 50px;
+}
+
+.usercard:hover{
+  background-color: #58bcb4;
+  color:white;
+}
+
+.usercard .learnmore {
+  color:  #58bcb4;
+}
+
+.usercard:hover .learnmore {
+  color:white;
+}
+
+
+.logo{
+  border: 10px black;
+  padding: 15px;
+  color: white; 
+  background-clip: padding-box;
+  background: #58bcb4;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.sublogo{
+
+  border: 10px black;
+  padding: 40px;
+  background-clip: padding-box;
+  background: #3F3F44;
+  color: white; 
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.copyright{
+  border: 10px black;
+  padding: 15px;
+  color: white; 
+  background-clip: padding-box;
+  background: #58bcb4;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.footerlink{
+  border: 10px black;
+  padding: 10px;
+  background-clip: padding-box;
+  background: #3F3F44;
+  color: white; 
+  margin-bottom: 0px;
+  
+}
+
+.modal{
+  border: 2px solid #e7e7e7;
+ 
+border-radius: 4px;
+ 
+padding: .5rem;
+  
+}
+
+.modaltitle{
+  color:#58bcb4;
+}
+
+.modalcontent{
+  color:black
+}
+
+.container{
+  text-align:center;
+  margin: 200px 200px 200px 200px;
+  
+}
+
+a{
+  color: white;
+  font-size: 30px;
+}
+
+
+.modalheader{
+  width: 100px; 
+  border-radius: 50px;
+}
+
+
+
+
+@media only screen and(min-width: 259px) and (max-width: 600px){
+  .logo {
+    width: 200px;
+    margin: 20px 0;
+    overflow-y: scroll;
+    margin-bottom: 0px;
+  margin-top: 0px;
+  }
+}
+
+@media only screen and (min-width: 259px) and (max-width: 600px)  {
+  .sublogo {
+    width: 110px;
+    margin: 20px 0;
+    overflow-y: scroll;
+    margin-bottom: 0px;
+  margin-top: 0px;
+  }
+}
+
+@media only screen and (min-width: 259px) and (max-width: 600px){
+.lobbody{
+  width: 200px;
+    margin: 20px 0;
+    overflow-y: scroll;
+    align-items: center;
+}
+}
+
+@media only screen and (min-width: 259px) and (max-width: 600px){
+.copyright{
+  width: 200px;
+    margin: 20px 0;
+    overflow-y: scroll;
+    align-items: center;
+    margin-bottom: 0px;
+  margin-top: 0px;
+}
+}
+
+@media only screen and (min-width: 259px) and (max-width: 600px){
+.footerlink{
+  width: 210px;
+    margin: 20px 0;
+    overflow-y: scroll;
+    align-items: center;
+    margin-bottom: 0px;
+  margin-top: 0px;
+}
+}
