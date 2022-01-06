@@ -1,20 +1,23 @@
 import React from "react";
-import logo from "../../assets/images/lobstermarketing.png"
+import logo from "../../assets/images/lobstermarketing.png";
 
-function Header(){
-
-
-    return(
+function Header() {
+  return (
+    <div>
+      <h2 className="logo">
+        <img style={{ width: "170px" }} src={logo} alt="" />
+      </h2>
+      <div>
+        <h1 className="sublogo">LOBSTER MARKETING DEV TEST</h1>
         <div>
-            <h2 className="logo"><img src={logo} alt= ''/> </h2>
-            <div>
-                <h2 className= "sublogo">LOBSTER MARKETING DEV TEST</h2>
-                <div>
-                    <h2 className= "lobbody">LOBSTER MARKETING 101</h2>
-                    <body className= "lobbody">Lobster Marketing is the premier marketing agency focused exclusively on serving the needs of pest control companies. 
-                    </body>  
-                </div>
-            </div>
+          <h2>This is body content specifically an H2</h2>
+          <p>
+            Field service software that keeps it simple. Field Routes helps
+            field service companies simplify, scale, and grow.
+          </p>
         </div>
-        )}
-export default Header
+      </div>
+    </div>
+  );
+}
+export default Header;

@@ -1,183 +1,177 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
-ul.usercards{
+ul.usercards {
   display: grid;
-
+  padding: 1rem;
   grid-template-columns: repeat(3, 1fr);
-
   grid-auto-rows: auto;
-   
-  grid-gap: 1rem;
-
+  grid-gap: 5rem;
+  padding: 3rem;
   list-style-type: none;
-} 
-
-
-
-.usercard{
-  
- box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(248, 246, 246, 0.19);
-border-radius: 20px;
-
-padding: 1px;
 }
 
-.userimage{
-  width: 100px; 
+ul.usercardsSmall {
+  display: grid;
+  padding: 50px 30px 30px 30px;
+  grid-template-columns: repeat(3);
+  margin: 20px;
+  grid-auto-rows: auto;
+  grid-gap: 1rem;
+  list-style-type: none;
+}
+.usercard.usercardsSmall {
+  padding-top: 100px;
+}
+.usercard {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(248, 246, 246, 0.19);
+  border-radius: 10px;
+  height: 140px;
+}
+
+.usercard {
+  font-size: 90px;
+}
+
+.userImage {
+  width: 80px;
   border-radius: 50px;
+  position: relative;
+  top: -35px;
 }
 
-.usercard:hover{
+.modalImage {
+  width: 80px;
+  border-radius: 50px;
+  position: relative;
+  top: 40px;
+}
+
+.bold {
+  font-size: 10px;
+  position: relative;
+  top: -35px;
+  font-weight: bold;
+}
+
+.bio {
+  font-size: 10px;
+  position: relative;
+  top: -35px;
+}
+
+.learnmore {
+  font-size: 10px;
+  position: relative;
+  top: -30px;
+  font-weight: bold;
+}
+
+.usercard:hover {
   background-color: #58bcb4;
-  color:white;
+  color: white;
 }
 
 .usercard .learnmore {
-  color:  #58bcb4;
+  color: #58bcb4;
 }
 
 .usercard:hover .learnmore {
-  color:white;
+  color: white;
 }
 
-
-.logo{
+.logo {
   border: 10px black;
-  padding: 15px;
-  color: white; 
+  padding: 1px;
+  color: white;
+  position: sticky;
+  top: 0px;
   background-clip: padding-box;
   background: #58bcb4;
   margin-bottom: 0px;
   margin-top: 0px;
 }
 
-.sublogo{
-
+.sublogo {
   border: 10px black;
-  padding: 40px;
+  padding: 60px;
   background-clip: padding-box;
-  background: #3F3F44;
-  color: white; 
+  background: #3f3f44;
+  color: white;
   margin-top: 0px;
   margin-bottom: 0px;
 }
 
-.copyright{
+.copyright {
   border: 10px black;
   padding: 15px;
-  color: white; 
+  color: white;
   background-clip: padding-box;
   background: #58bcb4;
   margin-bottom: 0px;
   margin-top: 0px;
 }
 
-.footerlink{
+.footerlink {
   border: 10px black;
   padding: 10px;
   background-clip: padding-box;
-  background: #3F3F44;
-  color: white; 
+  background: #3f3f44;
+  color: white;
   margin-bottom: 0px;
-  
 }
 
-.modal{
-  border: 2px solid #e7e7e7;
- 
-border-radius: 4px;
- 
-padding: .5rem;
-  
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
-.modaltitle{
-  color:#58bcb4;
+.modaltitle {
+  color: #58bcb4;
+  font-size: 10px;
 }
 
-.modalcontent{
-  color:black
+.modalcontent {
+  color: black;
+  font-size: 15px;
+  line-height: 0.3;
+  font-weight: 400;
+  background-color: white;
+  width: 300px;
+  padding: 40px;
+  border-radius: 5px;
 }
 
-.container{
-  text-align:center;
+.container {
+  text-align: center;
   margin: 200px 200px 200px 200px;
-  
 }
 
-a{
+a {
   color: white;
   font-size: 30px;
 }
 
-
-.modalheader{
-  width: 100px; 
+.modalheader {
+  width: 100px;
   border-radius: 50px;
-}
-
-
-
-
-@media only screen and(min-width: 259px) and (max-width: 600px){
-  .logo {
-    width: 200px;
-    margin: 20px 0;
-    overflow-y: scroll;
-    margin-bottom: 0px;
-  margin-top: 0px;
-  }
-}
-
-@media only screen and (min-width: 259px) and (max-width: 600px)  {
-  .sublogo {
-    width: 110px;
-    margin: 20px 0;
-    overflow-y: scroll;
-    margin-bottom: 0px;
-  margin-top: 0px;
-  }
-}
-
-@media only screen and (min-width: 259px) and (max-width: 600px){
-.lobbody{
-  width: 200px;
-    margin: 20px 0;
-    overflow-y: scroll;
-    align-items: center;
-}
-}
-
-@media only screen and (min-width: 259px) and (max-width: 600px){
-.copyright{
-  width: 200px;
-    margin: 20px 0;
-    overflow-y: scroll;
-    align-items: center;
-    margin-bottom: 0px;
-  margin-top: 0px;
-}
-}
-
-@media only screen and (min-width: 259px) and (max-width: 600px){
-.footerlink{
-  width: 210px;
-    margin: 20px 0;
-    overflow-y: scroll;
-    align-items: center;
-    margin-bottom: 0px;
-  margin-top: 0px;
-}
 }

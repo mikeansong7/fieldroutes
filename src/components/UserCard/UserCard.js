@@ -1,20 +1,28 @@
-import React, {useState} from "react";
-import Modal from "../Modal/Modal"
+import React from "react";
 
-
-function UserCard({user}) {
-    const [modal, setModal] = useState(true)
-    function handleModal(){
-        setModal(!modal)
-    }
-
-return(
-       modal ? (
-        <div onClick={handleModal}>
-            <img className= "userimage" src={user.picture.thumbnail} alt= {user.name.first}/>
-            <h6 className= "description"> {user.name.first} {user.name.last} | {user.location.state}, {user.location.country}</h6>
-            <h6 className="learnmore">Learn More</h6>
-        </div>
-        ) : (<Modal user= {user} key={user.cell} handleModal={handleModal} />)
-        )}
-export default UserCard
+function UserCard({ user, setModalInfo, modal, setModal }) {
+  return (
+    <div
+      onClick={() => {
+        setModalInfo(user);
+        setModal(!modal);
+      }}
+    >
+      <img
+        className="userImage"
+        src={user.picture.thumbnail}
+        alt={user.name.first}
+      />
+      <p className="bio">
+        <span style={{ fontWeight: "bold" }}>
+          {user.name.first} {user.name.last}
+        </span>
+        <span>
+          | {user.location.state}, {user.location.country}
+        </span>
+      </p>
+      <p className="learnmore">Learn More</p>
+    </div>
+  );
+}
+export default UserCard;
